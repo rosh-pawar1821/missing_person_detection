@@ -1,1 +1,1 @@
-web: gunicorn missing_person_detection.wsgi
+web: gunicorn missing_person_detection.missing_person_detection.wsgi:application
