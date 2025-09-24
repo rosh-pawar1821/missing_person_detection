@@ -10,7 +10,8 @@ class Missingperson(models.Model):
     embedding = models.BinaryField(null=True, blank=True) 
 
     def __str__(self):
-        self.name
+        return self.name if self.name else f"Missing Person #{self.id}"
+
 
 
 class Detectionmodelresult(models.Model):
